@@ -9,5 +9,5 @@
 
 c\[i,j\]表示从coinValues数组中第0......到i个值，对应的找数值i的最少硬币数
 
-
+持续分析，得出c\[i,j\] = min{c\[i-1,j\] , c\[i, j - coinValues\[i\]\] + 1}
 
