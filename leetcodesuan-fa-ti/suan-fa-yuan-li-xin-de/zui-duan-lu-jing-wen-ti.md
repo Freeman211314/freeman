@@ -7,7 +7,7 @@
     * 一轮后，起点到每个顶点的边，都是最小的。然后持续n轮。
     
 [算法详解](https://blog.csdn.net/qq_35644234/article/details/60870719)
-2. SPFA算法
+2. SPFA算法 
     
 
 ```java
