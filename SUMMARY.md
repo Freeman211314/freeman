@@ -4,7 +4,6 @@
 * [基础知识](README.md)
   * [JVM相关](jvmxiang-guan.md)
 * [LeetCode算法题](leetcodesuan-fa-ti.md)
-  * [两两交换链表中的节点](leetcodesuan-fa-ti/两两交换链表中的节点.md)
   * [子集问题](leetcodesuan-fa-ti/zi-ji-wen-ti.md)
   * [填充同一层兄弟节点问题](leetcodesuan-fa-ti/tian-chong-tong-yi-ceng-xiong-di-jie-dian-wen-ti.md)
   * [算法原理心得](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de.md)
