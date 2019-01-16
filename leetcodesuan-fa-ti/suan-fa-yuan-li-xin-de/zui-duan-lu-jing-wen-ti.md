@@ -22,10 +22,12 @@
                 temp = i;
             }
         }
-        //cout << temp + 1 << "  "<<min << endl;
+
         //把temp对应的顶点加入到已经找到的最短路径的集合中
         dis[temp].visit = true;
         ++count;
+        
+        //因为不可达的，则是无穷
         for (i = 0; i < this->vexnum; i++) {
             //注意这里的条件arc[temp][i]!=INT_MAX必须加，不然会出现溢出，从而造成程序异常
             if (!dis[i].visit && arc[temp][i]!=INT_MAX && (dis[temp].value + arc[temp][i]) < dis[i].value) {
