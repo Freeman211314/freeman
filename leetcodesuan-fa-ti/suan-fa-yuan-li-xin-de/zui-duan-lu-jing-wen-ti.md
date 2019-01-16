@@ -8,7 +8,7 @@
 2. SPFA算法
     
 [算法详解](https://blog.csdn.net/qq_35644234/article/details/60870719)
-```java
+```python
 void Graph_DG::Dijkstra(int begin){
     //首先初始化我们的dis数组
     int i;
