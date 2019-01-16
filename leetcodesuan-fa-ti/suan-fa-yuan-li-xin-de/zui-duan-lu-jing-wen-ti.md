@@ -9,25 +9,13 @@
     
 [算法详解](https://blog.csdn.net/qq_35644234/article/details/60870719)
 ```java
-void Graph_DG::Dijkstra(int begin){
-    //首先初始化我们的dis数组
-    int i;
-    for (i = 0; i < this->vexnum; i++) {
-        //设置当前的路径
-        dis[i].path = "v" + to_string(begin) + "-->v" + to_string(i + 1);
-        dis[i].value = arc[begin - 1][i];
-    }
-    //设置起点的到起点的路径为0
-    dis[begin - 1].value = 0;
-    dis[begin - 1].visit = true;
-
-    int count = 1;
     //计算剩余的顶点的最短路径（剩余this->vexnum-1个顶点）
     while (count != this->vexnum) {
         //temp用于保存当前dis数组中最小的那个下标
         //min记录的当前的最小值
         int temp=0;
         int min = INT_MAX;
+        //找出到起点的最小边
         for (i = 0; i < this->vexnum; i++) {
             if (!dis[i].visit && dis[i].value<min) {
                 min = dis[i].value;
@@ -47,13 +35,6 @@ void Graph_DG::Dijkstra(int begin){
             }
         }
     }
-
-}
---------------------- 
-作者：Ouyang_Lianjun 
-来源：CSDN 
-原文：https://blog.csdn.net/qq_35644234/article/details/60870719 
-版权声明：本文为博主原创文章，转载请附上博文链接！
 ```
 ***
 ###经典的 ***无向图最短路径问题***
