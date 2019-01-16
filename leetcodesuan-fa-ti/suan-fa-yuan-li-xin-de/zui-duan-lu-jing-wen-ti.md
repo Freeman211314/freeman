@@ -27,7 +27,7 @@
         dis[temp].visit = true;
         ++count;
         
-        //因为不可达的，则是无穷
+        //因为不可达的，则是无穷。并且 1-3-4这种情况，会在运行4时，4+3的值 会覆盖出来。
         for (i = 0; i < this->vexnum; i++) {
             //注意这里的条件arc[temp][i]!=INT_MAX必须加，不然会出现溢出，从而造成程序异常
             if (!dis[i].visit && arc[temp][i]!=INT_MAX && (dis[temp].value + arc[temp][i]) < dis[i].value) {
