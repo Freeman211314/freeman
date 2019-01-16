@@ -2,7 +2,7 @@
 详情略，但经典使用场景是
 1.[***树的层次遍历***](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii)
 2.图轮（包含无向图 和 有向图，图可以采用图形数据结构 或者 二位数组来表示）
-* 最短路径问题，经典的广度遍历 
+* 最短路径问题，经典的广度遍历,广度优先遍历的能正好符合最短路径[单词接龙](https://leetcode-cn.com/problems/word-ladder/)
 
 ***
 ###树的层次遍历
