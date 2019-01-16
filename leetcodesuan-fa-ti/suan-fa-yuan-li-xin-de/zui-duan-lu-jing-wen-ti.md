@@ -10,4 +10,4 @@
 ***
 ###经典的 ***无向图最短路径问题***
 [单词接龙](https://leetcode-cn.com/problems/word-ladder/)
-其实解题思路，也是Dijkstra
+其实解题思路，也是Dijkstra思想，只不过实现起来要简单，因为无向图，则构造图时，只需要关注半边，氢气
