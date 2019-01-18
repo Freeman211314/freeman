@@ -14,4 +14,6 @@
     * [BFS-广度优先遍历](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/bfsguang-du-you-xian-bian-li.md)
     * [最短路径问题](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/zui-duan-lu-jing-wen-ti.md)
     * [回溯算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/hui-su-suan-fa.md)
+    * [排序算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/pai-xu-suan-fa.md)
+    * 查找算法
 
