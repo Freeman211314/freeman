@@ -8,4 +8,4 @@ on e.DepartmentId = d.Id
 group by e.DepartmentId
 having e.Salary = MAX(Salary)
 
-坑点：having中MAX函数是返回group by后记录中最大值，而不是分组前每组的最大值。
+坑点：having中***MAX函数是返回group by后记录中最大值，而不是分组前每组的最大值***。
