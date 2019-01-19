@@ -19,3 +19,5 @@ on a.DepartmentId = d.Id
 order by a.Salary desc
     ) as e
 group by e.DepartmentId
+
+原先一直以为，先order by,然后再 group by就能成功？？
