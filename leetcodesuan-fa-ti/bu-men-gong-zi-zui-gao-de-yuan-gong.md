@@ -20,5 +20,5 @@ order by a.Salary desc
     ) as e
 group by e.DepartmentId
 
-原先一直以为，先order by,然后再 group by就能成功？？
+原先一直以为，先order by,然后再 group by就能成功？？***现在看group by只关注于物理表***
 因为order by是返回第一条记录。
