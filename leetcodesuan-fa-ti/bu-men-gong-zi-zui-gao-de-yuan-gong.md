@@ -7,7 +7,7 @@ on e.DepartmentId = d.Id
 group by e.DepartmentId
 having e.Salary = MAX(Salary)
 
-坑点：having中***MAX函数是返回group by后记录中最大值，而不是分组前每组的最大值？但在后面的测试题中，发现Min又是每组下最小值***。
+坑点：having中***MAX函数是返回是分组前每组的最大值？但在后面的测试题中，发现Min又是每组下最小值***。
 select Min(id)
 from Person
 group by Email
