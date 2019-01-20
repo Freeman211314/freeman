@@ -17,6 +17,6 @@
     * [回溯算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/hui-su-suan-fa.md)
     * [排序算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/pai-xu-suan-fa.md)
     * 查找算法
-  * [部门工资最高的员工](leetcodesuan-fa-ti/bu-men-gong-zi-zui-gao-de-yuan-gong.md)
-  * [统计词频](leetcodesuan-fa-ti/tong-ji-ci-pin.md)
+  * [部门工资最高的员工-sql脚本](leetcodesuan-fa-ti/bu-men-gong-zi-zui-gao-de-yuan-gong.md)
+  * [统计词频-shell脚本](leetcodesuan-fa-ti/tong-ji-ci-pin.md)
 
