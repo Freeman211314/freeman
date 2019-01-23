@@ -19,7 +19,6 @@ sort 命令，进行对数值进行排序(-nr)，对数值(-k2)
 其中：
 
 awk 是文本分析工具，经常用于统计、处理  
-
 sed 文本流编辑工具，经常用于打印特定的行等。如：[打印第10行](https://leetcode-cn.com/problems/tenth-line/) ，答案为：sed -n '2p' file.txt  
 
 sort 排序工具  
