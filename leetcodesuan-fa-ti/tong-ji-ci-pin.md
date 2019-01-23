@@ -15,6 +15,7 @@ awk '{for(i=1;i<=NF;i++){res[$i]+=1}}END{for(k in res){print k" "res[k]} }' word
 
 sort 命令，进行对数值进行排序(-nr)，对数值(-k2)
 ***
+
 其中：
 awk 是文本分析工具，经常用于统计、处理  
 
