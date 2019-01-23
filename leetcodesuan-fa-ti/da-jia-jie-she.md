@@ -30,3 +30,4 @@ private void helper(int[] nums,int begin,int sum){
 回溯法的弊端，每次递归内部都做了大量重复计算。
 
 * 分析二：记忆化搜索
+因为回溯法造成大量重复计算num[i]的值
