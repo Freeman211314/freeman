@@ -1,5 +1,5 @@
 # 回溯算法
-回溯算法，接触最多的是组合问题
+回溯算法，接触最多的是组合问题，从数组中求子集
 [78. 子集](https://leetcode-cn.com/problems/subsets/)
 [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
 还有各种变种题目
