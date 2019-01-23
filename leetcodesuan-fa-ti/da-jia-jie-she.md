@@ -5,4 +5,25 @@
 
 数组中，隔开取值，求最大值？
 * 分析一：与之前组合问题很想，首先引入思维的是回溯法
-
+```java
+private void helper(int[] nums,int begin,int sum){
+        if(begin >= nums.length){
+            if(result.compareTo(sum) < 0){
+                result = sum;
+                
+            }
+            return ;
+        }
+        if(begin >= nums.length-1){
+            if(result.compareTo(sum + nums[begin]) < 0 ){
+                result = sum + nums[begin];
+                
+            }
+            return ;
+        }
+        
+        for(int i = begin; i < nums.length; i++){
+            helper(nums,i + 2, sum + nums[i]);
+        }
+        
+    }
