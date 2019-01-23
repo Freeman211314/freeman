@@ -5,6 +5,7 @@
 
 数组中，隔开取值，求最大值？
 * 分析一：与之前组合问题很想，首先引入思维的是回溯法
+最大值，毫无疑问，是第i个数，存不存在？如果存在，则是第i+2后数组再重新组合的再结果。
 ```java
 private void helper(int[] nums,int begin,int sum){
         if(begin >= nums.length){
