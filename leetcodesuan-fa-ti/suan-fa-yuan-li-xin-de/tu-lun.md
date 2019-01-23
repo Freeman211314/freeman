@@ -7,6 +7,7 @@
 1、 求[最短路径问题](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/zui-duan-lu-jing-wen-ti.md)  
 2、 DAG（有向无环图）求证是否无环问题  
 
+验证是否有环:  
 分为3步：
     * 构建图
     * 缩减出度为0的节点，直到最后
