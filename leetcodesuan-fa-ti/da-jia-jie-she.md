@@ -68,3 +68,4 @@ private void helper(int[] nums,int begin,int sum){
         return res;
     }
 ```
+* 动态规划，每次取用都会影响后续的结果，那么就不能采用贪心算法。这种问题就必须采用动态规划。
