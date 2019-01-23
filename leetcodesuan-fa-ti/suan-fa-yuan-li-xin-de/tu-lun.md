@@ -4,7 +4,7 @@
 ***
 
 常见算法：
-1、 求[最短路径问题](suan-fa-yuan-li-xin-de/zui-duan-lu-jing-wen-ti.md)  
+1、 求[最短路径问题](zui-duan-lu-jing-wen-ti.md)  
 2、 DAG（有向无环图）求证是否无环问题 [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
 
 验证是否有环:  
