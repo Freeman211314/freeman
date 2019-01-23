@@ -31,3 +31,40 @@ private void helper(int[] nums,int begin,int sum){
 
 * 分析二：记忆化搜索
 因为回溯法造成大量重复取用计算num[i]的值，那我可以将
+```java
+/**
+     * memo[i] 表示考虑抢劫 nums[i...n] 所能获得的最大收益
+     */
+    private int[] memo;
+
+    /**
+     * 方式一：记忆化搜索
+     * ① 状态：考虑抢劫 nums[index...num.length） 这个范围内的所有房子
+     * ② 状态转移：tryRob(n) = Max{rob(0) + tryRob(2), rob(1) + tryRob(3)... rob(n-3) + tryRob(n-1), rob(n-2), rob(n-1)}
+     *
+     * @param nums
+     * @return
+     */
+    public int rob1(int[] nums) {
+        memo = new int[nums.length];
+        Arrays.fill(memo, -1);
+        return tryRob(nums, 0);
+    }
+
+    private int tryRob(int[] nums, int index) {
+        if (index >= nums.length) {
+            return 0;
+        }
+        // 记忆化搜索可以避免重叠子问题的重复运算
+        if (memo[index] != -1) {
+            return memo[index];
+        }
+        // 下面是对状态转移方程的描述
+        int res = 0;
+        for (int i = index; i < nums.length; i++) {
+            res = Math.max(res, nums[i] + tryRob(nums, i + 2));
+        }
+        memo[index] = res;
+        return res;
+    }
+```
