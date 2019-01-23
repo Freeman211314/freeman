@@ -70,3 +70,4 @@ private void helper(int[] nums,int begin,int sum){
 ```
 * 动态规划，每次取用都会影响后续的结果，那么就不能采用贪心算法。这种问题就必须采用动态规划。
 动态规划：找递推式
+ memo[i] 表示考虑抢劫 nums[i...n-1] 所能获得最大收益（不是说一定从 i 开始抢劫）
