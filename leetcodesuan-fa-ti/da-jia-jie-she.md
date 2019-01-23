@@ -72,3 +72,4 @@ private void helper(int[] nums,int begin,int sum){
 动态规划：找递推式
  memo[i] 表示考虑抢劫 nums[i...n-1] 所能获得最大收益（不是说一定从 i 开始抢劫）
 memo[i] = Max(nums[i]+ memo[i+2],nums[i+1] + memo[i+3)
+这种递推式出来了。
