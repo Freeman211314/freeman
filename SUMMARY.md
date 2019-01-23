@@ -13,6 +13,7 @@
     * [回溯算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/hui-su-suan-fa.md)
     * [排序算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/pai-xu-suan-fa.md)
     * 查找算法
+    * [空间换时间](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/kong-jian-huan-shi-jian.md)
   * [填充同一层兄弟节点问题](leetcodesuan-fa-ti/tian-chong-tong-yi-ceng-xiong-di-jie-dian-wen-ti.md)
   * [最大子序列](leetcodesuan-fa-ti/zui-da-zi-xu-lie.md)
   * [链表追击问题](leetcodesuan-fa-ti/lian-biao-zhui-ji-wen-ti.md)
