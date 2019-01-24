@@ -5,15 +5,17 @@
 
 案例分析：
 
-1、找零问题，最优解，最少的硬币数  [http://www.cnblogs.com/hapjin/p/5578852.html](http://www.cnblogs.com/hapjin/p/5578852.html)
+1、 找零问题，最优解，最少的硬币数  [http://www.cnblogs.com/hapjin/p/5578852.html](http://www.cnblogs.com/hapjin/p/5578852.html)
 
 c\[i,j\]表示从coinValues数组中第0......到i个值，对应的找数值i的最少硬币数
 
 持续分析，得出c\[i,j\] = min{c\[i-1,j\] , c\[i, j - coinValues\[i\]\] + 1} （说白了就是面值为coinValues\[i\] 的硬币用 或 不用）
 
-2、找零问题，多少种找零方案 [https://www.cnblogs.com/hapjin/p/5579737.html](https://www.cnblogs.com/hapjin/p/5579737.html)
+2、 找零问题，多少种找零方案 [https://www.cnblogs.com/hapjin/p/5579737.html](https://www.cnblogs.com/hapjin/p/5579737.html)
 
 最优子结构：c\[i,j\] = c\[i-1,j\]  +  c\[i, j - coinValues\[i\]\] （明显组合原理中加法实现）
+
+3、 
 
 ---
 
