@@ -56,6 +56,7 @@ class Solution {
                 }                
             }            
         }
+        //如果存在环，则结果一定有入度为0值
         if(result.length > 1 && result[result.length - 1] == 0 && result[result.length - 2] == 0){
             return new int[]{};
         }
