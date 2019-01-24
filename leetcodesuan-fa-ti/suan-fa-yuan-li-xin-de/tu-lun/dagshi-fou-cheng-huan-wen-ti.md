@@ -24,7 +24,7 @@ class Solution {
     //拓扑排序，入度为0的，优先被选择。
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         //构造图,因为需要优化时间复杂度，所以将入度也表示出来
-        int[] degree = new int[numCourses];
+        int[] degree = new int[numCourses];//[0,1],表示课程1可以推到得到课程0
         Map<Integer,List<Integer>> graph = new HashMap();
         for(int i = 0;i< prerequisites.length;i++){
             int ru = prerequisites[i][0];//课程0
