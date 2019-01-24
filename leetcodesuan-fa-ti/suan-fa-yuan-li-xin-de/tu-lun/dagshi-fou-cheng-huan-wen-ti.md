@@ -3,7 +3,7 @@
 * [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
 * [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
 
-# 是否存在环
+# 拓扑排序
 > 分析
 解决这道题，我们首先要补充一下关于拓扑排序的知识。
 将有向图中的顶点以线性方式进行排序。即对于任何连接自顶点u到顶点v的有向边uv，在最后的排序结果中，顶点u总是在顶点v的前面。
