@@ -27,8 +27,8 @@ class Solution {
         int[] degree = new int[numCourses];//[0,1],表示课程1可以推到得到课程0,说明1是出度，0是入度
         Map<Integer,List<Integer>> graph = new HashMap();
         for(int i = 0;i< prerequisites.length;i++){
-            int ru = prerequisites[i][0];//课程0
-            int chu = prerequisites[i][1];//被需要的课程
+            int ru = prerequisites[i][0];//入度  课程0
+            int chu = prerequisites[i][1];//出度  被需要的课程
             degree[ru]++;//入度数量,便于优化有序时间复杂度
             if(graph.containsKey(chu)){
                List<Integer> container = graph.get(chu); 
