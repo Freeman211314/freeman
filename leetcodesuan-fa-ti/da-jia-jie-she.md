@@ -73,3 +73,21 @@ private void helper(int[] nums,int begin,int sum){
  memo[i] 表示考虑抢劫 nums[i...n-1] 所能获得最大收益（不是说一定从 i 开始抢劫）
 memo[i] = Max(nums[i]+ memo[i+2],nums[i+1] + memo[i+3)
 这种递推式出来了。
+```java
+//money[i] = Max(num[i-2] + money[i], money[i-1]);
+    public int rob(int[] nums){
+        int[] money = new int[nums.length];
+        for(int i = 0;i< money.length ;i++){
+            if(i == 0){
+                money[i] = nums[i];
+                continue;
+            }
+            if(i == 1){
+                money[i] = Math.max(nums[i-1],nums[i]);
+                continue;
+            } 
+            money[i] = Math.max(money[i-2] + nums[i],money[i-1]);
+        }
+        return nums.length > 0 ? money[nums.length - 1] : 0;
+    }
+```
