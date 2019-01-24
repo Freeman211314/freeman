@@ -39,7 +39,7 @@ class Solution {
                 graph.put(chu,container);
             }
         }
-        //分析
+        //搜索入度为0(不依赖任何课程的），然后将关联它的所有课程减少入度1，依次类推
         int[] result = new int[numCourses];
         int h = 0;
         for(int i = 0;i< degree.length;i++){
