@@ -18,11 +18,6 @@
 若循环结束后，如果有向图中无节点，那么说明可以拓扑排序；如果有向图中仍存在节点，那么说明存在环，即不可被拓扑排序。
 
 这道题就采取上述思路，通过删除（同时记录）入度为0的节点，判断最后入度为0的节点的个数是否和总节点个数相同即可。
---------------------- 
-作者：whd_Alive 
-来源：CSDN 
-原文：https://blog.csdn.net/whdAlive/article/details/80542676 
-版权声明：本文为博主原创文章，转载请附上博文链接！
     
 * [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
 * [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
