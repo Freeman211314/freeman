@@ -16,8 +16,6 @@
 
 这道题就采取上述思路，通过删除（同时记录）入度为0的节点，判断最后入度为0的节点的个数是否和总节点个数相同即可。
     
-* [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
-* [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
 ```java
 class Solution {
     //分析，图论
