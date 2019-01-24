@@ -18,6 +18,51 @@
     
 * [207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
 * [210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
-
+```java
+class Solution {
+    //分析，图论
+    //拓扑排序，入度为0的，优先被选择。
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        //构造图,因为需要优化时间复杂度，所以将入度也表示出来
+        int[] degree = new int[numCourses];
+        Map<Integer,List<Integer>> graph = new HashMap();
+        for(int i = 0;i< prerequisites.length;i++){
+            int ru = prerequisites[i][0];//课程0
+            int chu = prerequisites[i][1];//被需要的课程
+            degree[ru]++;//入度数量,便于优化有序时间复杂度
+            if(graph.containsKey(chu)){
+               List<Integer> container = graph.get(chu); 
+               container.add(ru);
+            } else {
+                List<Integer> container = new ArrayList();
+                container.add(ru);
+                graph.put(chu,container);
+            }
+        }
+        //分析
+        int[] result = new int[numCourses];
+        int h = 0;
+        for(int i = 0;i< degree.length;i++){
+            for(int j = 0;j<degree.length;j++){
+                if(degree[j] == 0){
+                    if(graph.containsKey(j)){
+                        List<Integer> ruList = graph.get(j);
+                        for(int k =0 ;k< ruList.size();k++){
+                            degree[ruList.get(k)] --;
+                        }
+                    }
+                    result[h++] = j;
+                    degree[j] --;
+                }                
+            }            
+        }
+        if(result.length > 1 && result[result.length - 1] == 0 && result[result.length - 2] == 0){
+            return new int[]{};
+        }
+        return result;
+        
+    }
+}
+```
 
 
