@@ -1,7 +1,7 @@
 # [打家劫舍](https://leetcode-cn.com/problems/house-robber/comments/)
 ***
 [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/comments/)
-这道有环的问题，我理解错意思：并不是它可以回到原点又重新开始偷，所以只需要money[n] = Math.max(rob(nums, 0, n-2), rob(nums, 1, n-1),而单独money[n-2]和money[n-1]还是按照原先的动态规划求解。
+这道有环的问题，我理解错意思：并不是它可以回到原点又重新开始偷，所以只需要money[n] = Math.max(rob(nums, 0, n-2), rob(nums, 1, n-1),而单独money[n-2]和money[n-1]还是按照原先的*** 动态规划求解。
 
 经典算法题
 > 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
