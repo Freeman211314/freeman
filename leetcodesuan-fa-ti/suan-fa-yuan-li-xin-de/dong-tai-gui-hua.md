@@ -15,7 +15,7 @@ c\[i,j\]表示从coinValues数组中第0......到i个值，对应的找数值i�
 
 最优子结构：c\[i,j\] = c\[i-1,j\]  +  c\[i, j - coinValues\[i\]\] （明显组合原理中加法实现）
 
-3、 [打家劫舍问题]()
+3、 [打家劫舍问题](leetcodesuan-fa-ti/da-jia-jie-she.md)
 
 ---
 
