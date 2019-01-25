@@ -15,6 +15,7 @@
     * [图论](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/tu-lun.md)
       * [最短路径问题](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/tu-lun/zui-duan-lu-jing-wen-ti.md)
       * [DAG是否成环问题](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/tu-lun/dagshi-fou-cheng-huan-wen-ti.md)
+    * [后缀表达式算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/hou-zhui-biao-da-shi-suan-fa.md)
   * [填充同一层兄弟节点问题](leetcodesuan-fa-ti/tian-chong-tong-yi-ceng-xiong-di-jie-dian-wen-ti.md)
   * [子集问题](leetcodesuan-fa-ti/zi-ji-wen-ti.md)
   * [最大子序列](leetcodesuan-fa-ti/zui-da-zi-xu-lie.md)
