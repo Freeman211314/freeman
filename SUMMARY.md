@@ -27,4 +27,5 @@
   * [统计词频-shell脚本](leetcodesuan-fa-ti/tong-ji-ci-pin.md)
   * [打家劫舍](leetcodesuan-fa-ti/da-jia-jie-she.md)
   * [最大正方形](leetcodesuan-fa-ti/zui-da-zheng-fang-xing.md)
+  * [2的幂](leetcodesuan-fa-ti/2de-mi.md)
 
