@@ -34,7 +34,7 @@ def majorityElement(self, nums):
                 res2=num
                 num2+=1
                 continue
-                
+            //如果不相等，那么说明候选人的支持数少一个。    
             num2-=1
             num1-=1
         res=[]
