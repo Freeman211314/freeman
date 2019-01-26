@@ -10,6 +10,48 @@
 分析：因为超过n/3的众数，所以毫无疑问众数最多2组。且这两组数，个数一定比其他的总个数多（绝对优势多），那么自然联想到多数投票算法（类似于zk选择算法，都先投自己，如果支持你的人到0个了，那么就换人支持（因为众数，支持的人是最多的））。但是不是支持的人是超过n/3的，还需要一遍循环验证下。  
 
 ```python  
-def majorityElement(self, nums):
-        
+
+
 ``` 
+
+```python
+def majorityElement(self, nums):
+        res1,res2=0,0
+        num1,num2=0,0
+        for num in nums:
+            //如果相等，则候选人获得一票支持
+            if num==res1:
+                num1+=1
+                continue
+            if res2==num:
+                num2+=1
+                continue
+            //如果没候选人，则投自己    
+            if num1==0:
+                res1=num
+                num1+=1
+                continue
+            if num2==0:
+                res2=num
+                num2+=1
+                continue
+            //如果不相等，那么说明候选人的支持数少一个。    
+            num2-=1
+            num1-=1
+        //无论最后结果如何，众数的总个数一定是最多的，所以非众数的人是候选人的时候，他的投票数一定会到0，然后众数真正登场获得微弱的票数胜利（这种微弱的是众数的总票数 - 非众数的总票数）
+        res=[]
+        num1,num2=0,0
+        for num in nums:
+            if num==res1:
+                num1+=1
+            elif num==res2:
+                num2+=1
+        threshold=len(nums)//3
+        if num1>threshold:
+            res.append(res1)
+        if num2>threshold and res1!=res2:
+            res.append(res2)
+        return res
+
+
+```
