@@ -24,6 +24,7 @@ a + b * c + (d * e + f) * g
 ![](https://img-blog.csdn.net/20151126231053964)
 
 #例题
-[227. 基本计算器 II](
+[227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
+
 参考引用：
 [后缀表达式及应用](https://blog.csdn.net/u011141102/article/details/50004101)
