@@ -17,5 +17,6 @@ a + b * c + (d * e + f) * g
 ![](https://img-blog.csdn.net/20151126223448309)
 ![](https://img-blog.csdn.net/20151126223519614)
 
+#后缀表达式 -> 
 参考引用：
 [后缀表达式及应用](https://blog.csdn.net/u011141102/article/details/50004101)
