@@ -18,12 +18,14 @@ def majorityElement(self, nums):
         res1,res2=0,0
         num1,num2=0,0
         for num in nums:
+            //如果相等，则候选人获得一票支持
             if num==res1:
                 num1+=1
                 continue
             if res2==num:
                 num2+=1
                 continue
+            //如果没候选人，则投自己    
             if num1==0:
                 res1=num
                 num1+=1
@@ -32,6 +34,7 @@ def majorityElement(self, nums):
                 res2=num
                 num2+=1
                 continue
+                
             num2-=1
             num1-=1
         res=[]
