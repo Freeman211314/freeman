@@ -47,4 +47,4 @@ def majorityElement(self, nums):
         if num2>threshold and res1!=res2:
             res.append(res2)
         return res
-```
+``` 
