@@ -11,10 +11,6 @@
 
 ```python
 def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
         res1,res2=0,0
         num1,num2=0,0
         for num in nums:
