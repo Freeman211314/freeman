@@ -3,7 +3,7 @@
 
 [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
-[287. 寻找重复数](
+[287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/submissions/)
 
 等等，都是求某个节点，当然这部分内容，最通用的方案，就是将节点存于map容器中，通过容器辅助求解。
 
