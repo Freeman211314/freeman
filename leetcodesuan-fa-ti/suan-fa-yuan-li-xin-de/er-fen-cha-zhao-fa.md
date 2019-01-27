@@ -1,1 +1,1 @@
-# [](https://leetcode-cn.com/problems/first-bad-version/submissions/)
+# [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/submissions/)
