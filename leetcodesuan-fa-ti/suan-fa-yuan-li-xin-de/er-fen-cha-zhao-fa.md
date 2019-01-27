@@ -33,11 +33,11 @@ public int firstBadVersion(int n) {
 
 
 ```
-if(isBadVersion(middle)){
+    if(isBadVersion(middle)){
                 end = middle - 1;
             } else {
                 begin = middle +1;
-}
+    }
 
 ```
 
