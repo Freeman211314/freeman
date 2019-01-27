@@ -1,0 +1,1 @@
+# [](https://leetcode-cn.com/problems/first-bad-version/submissions/)
