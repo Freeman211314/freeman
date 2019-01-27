@@ -3,7 +3,7 @@
 在初次分析中发现就是在有序集中查找一个数。
 
 我常写的二分查找法如下：
-```java
+```
 public int firstBadVersion(int n) {
         //查找  -->二分查找法
         int begin = 1;
@@ -21,10 +21,16 @@ public int firstBadVersion(int n) {
 ```
 发现会统计错误，因为比如123中2是第一个错误版本，end = middle - 1后直接等于1了，造成在1，1中继续查找，最后返回结果1.
 那么可能会陷入
-```java
+```
             if(isBadVersion(middle)){
                 end = middle;
             } else {
                 begin = middle;
             }
 ```
+
+
+```
+
+```
+
