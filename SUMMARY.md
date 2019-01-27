@@ -28,4 +28,5 @@
   * [打家劫舍](leetcodesuan-fa-ti/da-jia-jie-she.md)
   * [最大正方形](leetcodesuan-fa-ti/zui-da-zheng-fang-xing.md)
   * [2的幂](leetcodesuan-fa-ti/2de-mi.md)
+  * [各位相加](leetcodesuan-fa-ti/ge-wei-xiang-jia.md)
 
