@@ -14,4 +14,6 @@
     4、依据 等式 (x)%z%z = (x)%z,可得出result%9 =(a+b+c+d)%9%9%9 = (a+b+c+d)% 9,而根据第一步得出num % 9 = (a+b+c+d)% 9 = result %9
     5、 因为result 为10以内的正数，所以result的范围为1-9（0不可能存在）
     6、恒等式两边各减1：num % 9 - 1 = result %9 - 1，num%9（-1）%9 = result%9 +（-1）%9然后根据(x+y)%z=(x%z+y%z)%z，得出(num -1)%9 = (result-1)%9
+    7、因为result -1 永远是0-8之间，所以直接等于(num -1)%9 = result-1。得出恒等式result = (num-1)%9 + 1
+
 
