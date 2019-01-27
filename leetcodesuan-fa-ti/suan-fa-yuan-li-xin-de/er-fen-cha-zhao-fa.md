@@ -15,5 +15,5 @@ public int firstBadVersion(int n) {
             }
         }
         return begin;
-    }
+}
 ```
