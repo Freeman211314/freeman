@@ -29,8 +29,3 @@ public int firstBadVersion(int n) {
             }
 ```
 
-
-```
-
-```
-
