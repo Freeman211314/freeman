@@ -37,7 +37,7 @@ if(isBadVersion(middle)){
                 end = middle - 1;
             } else {
                 begin = middle +1;
-            }
+}
 
 ```
 
