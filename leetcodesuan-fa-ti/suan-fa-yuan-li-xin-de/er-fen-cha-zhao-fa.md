@@ -28,5 +28,5 @@ public int firstBadVersion(int n) {
                 begin = middle;
             }
 ```
-但是这道题目
+但是这道题目当middle是true时，那么前者可能是true，也可能正好是false(那么当前middle即为所求），所以在此处不-1
 
