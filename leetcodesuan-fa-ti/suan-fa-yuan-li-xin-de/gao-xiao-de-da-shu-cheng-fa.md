@@ -3,8 +3,6 @@ KaraTsuba乘法。普通乘法复杂度一般都是O(n^2)，而这个算法，�
         ![avatar](http://baidu.com/pic/doge.png)
 ![avatar](https://img-blog.csdn.net/20160910133150980?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
-图中显示了计算5678*1234的过程，首先是拆分成abcd四个部分，然后分别计算ac, bd, (a + b)*(c+d)，最后再用第三个算式的结果减去前面两个（其实得到的就是bc+ad，但是减少了乘法步骤），然后，计算式1后面加4个0，计算式2后面不加，计算式3后面加2个0，再把这三者相加，就是正确结果。好吧，看到这里，你一定觉得，这不是很复杂吗。但其实不然，在大数计算的时候，计算机中无法直接用*实现，只能自己写算法，这时候，每个人写的算法不同，差异就体现出来了。
-
 接下来，就来证明一下这个算法的正确性。
 
 我们假设要相乘的两个数是x * y。我们可以把x，y写成:
