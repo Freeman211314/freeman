@@ -20,6 +20,7 @@
     * [摩尔投票算法（多数投票算法）](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/mo-er-tou-piao-suan-fa-ff08-duo-shu-tou-piao-suan-fa-ff09.md)
     * [二分查找法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/er-fen-cha-zhao-fa.md)
     * [高效的大数乘法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/gao-xiao-de-da-shu-cheng-fa.md)
+    * [求最大公约数-欧几里得算法](leetcodesuan-fa-ti/suan-fa-yuan-li-xin-de/qiu-zui-da-gong-yue-6570-ou-ji-li-de-suan-fa.md)
   * [填充同一层兄弟节点问题](leetcodesuan-fa-ti/tian-chong-tong-yi-ceng-xiong-di-jie-dian-wen-ti.md)
   * [子集问题](leetcodesuan-fa-ti/zi-ji-wen-ti.md)
   * [最大子序列](leetcodesuan-fa-ti/zui-da-zi-xu-lie.md)
