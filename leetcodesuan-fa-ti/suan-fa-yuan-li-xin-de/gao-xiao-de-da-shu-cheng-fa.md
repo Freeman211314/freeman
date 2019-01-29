@@ -1,4 +1,4 @@
-今天看Coursera课程时，看到一个牛逼的算法，叫KaraTsuba乘法。普通乘法复杂度一般都是O(n^2)，而这个算法，仅有O(nlog3)。下面，我就来介绍一下这个算法。
+KaraTsuba乘法。普通乘法复杂度一般都是O(n^2)，而这个算法，仅有O(nlog3)。下面，我就来介绍一下这个算法。
         首先来看看这个算法是怎么进行计算的，见下图：
         
 ![avatar](https://blog.csdn.net/sunnylinner/article/details/52592496)
