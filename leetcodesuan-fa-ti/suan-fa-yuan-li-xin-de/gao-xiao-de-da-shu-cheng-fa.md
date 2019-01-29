@@ -22,4 +22,4 @@ x * y = a*c*10^n + (a + b + c + d)* 10^n/2 + bd
 2. 这些乘法在算法里应该是递归实现的，数字很大时，先拆分，然后拆分出来的数字还是很大的话，就继续拆分，直到a * b已经是一个非常简单的小问题为之。这也是分治的思想。
 
 摘抄引用：
-[KaraTsuba乘法——高效的大数乘法]()
+[KaraTsuba乘法——高效的大数乘法](https://blog.csdn.net/sunnylinner/article/details/52592496)
