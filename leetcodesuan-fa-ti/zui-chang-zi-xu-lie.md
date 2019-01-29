@@ -35,3 +35,22 @@ for(i=0;i<n;i++)
 
 ```
 2、 常规思路，需要自增序列长度，那么每次都比较0……i之间有多少自增长度
+```C
+#include<iostream>  
+using namespace std;
+int i,j,n,a[100],b[100],max;    
+int main()  
+{
+    cin>>n;
+    for(i=0;i<n;i++) cin>>a[i];  
+    b[0]=1; //初始化，以a[0]结尾的最长递增子序列长度为1  
+    for(i=1;i<n;i++)  
+    {  
+        b[i]=1;//b[i]最小值为1
+        for(j=0;j<i;j++)  
+            if(a[i]>a[j]) b[i]=max(b[i],b[j]+1);
+    }  
+    for(max=i=0;i<n;i++) if(b[i]>max) max=b[i];  
+    cout<<max<<endl;
+}
+```
