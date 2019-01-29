@@ -33,4 +33,5 @@
   * [2的幂](leetcodesuan-fa-ti/2de-mi.md)
   * [各位相加](leetcodesuan-fa-ti/ge-wei-xiang-jia.md)
   * [组成和的个数最少](leetcodesuan-fa-ti/wan-quan-ping-fang-657028-zu-cheng-he-de-ge-shu-zui-shao-ff09.md)
+  * [最长子序列](leetcodesuan-fa-ti/zui-chang-zi-xu-lie.md)
 
