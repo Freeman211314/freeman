@@ -35,7 +35,7 @@ for(i=0;i<n;i++)
 
 ```
 2、 常规思路，需要自增序列长度，那么每次都比较0……i之间有多少自增长度  
-如何判断j < i时，
+如何判断j < i时，b[j] = max(b[j],b[j-1] +1)
 ```C
 #include<iostream>  
 using namespace std;
