@@ -2,7 +2,7 @@
 ***
 
 
-```
+```C
 include <iostream>
 using namespace std; 
 int i,j,n,s,t,a[100001];
