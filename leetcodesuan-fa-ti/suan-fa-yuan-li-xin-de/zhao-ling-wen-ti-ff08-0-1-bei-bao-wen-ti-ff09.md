@@ -10,3 +10,6 @@
 ***转移方程式？***
 > 分析: 金额i从硬币coins找零问题，每次金额coins找零有几种情况？金额j（0 ~ coins.length）找 1 与 不找 0，0与1问题。
 
+dp[i] = dp[i] (不找金额coins[j]）
+dp[i] = dp[i - coins[j]] + 1，找了金额j，那么总硬币数dp[i]，就是金额i-coins[j]时的总硬币数 + 1
+
