@@ -1,7 +1,7 @@
 # 0-1背包问题
 [解答](https://www.cnblogs.com/xym4869/p/8513801.html)  
 和找零问题的根本不同在于，背包问题物品只能用一次，所以它的转移方程式:
-第0-i之间的物品，填满j容量，所需的最少个数c[i,j]
+第0-i之间的物品，填满j容量，所需的最少个数c[i,j]:
 c[i,j] = min(c[i-1,j],c[i,j-coins[
 
 # [找零问题](https://leetcode-cn.com/problems/coin-change/submissions/)
