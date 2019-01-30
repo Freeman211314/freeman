@@ -1,6 +1,8 @@
 # 0-1背包问题
-[解答](https://www.cnblogs.com/xym4869/p/8513801.html)
-
+[解答](https://www.cnblogs.com/xym4869/p/8513801.html)  
+和找零问题的根本不同在于，背包问题物品只能用一次，所以它的转移方程式:
+第0-i之间的物品，填满j容量，所需的最少个数c[i,j]
+c[i,j] = min(c[i-1,j],c[i,j-coins[
 
 # [找零问题](https://leetcode-cn.com/problems/coin-change/submissions/)
 > 给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。
