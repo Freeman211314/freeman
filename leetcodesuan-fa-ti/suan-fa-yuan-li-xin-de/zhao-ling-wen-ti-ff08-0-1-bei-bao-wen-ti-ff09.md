@@ -18,7 +18,37 @@ i 表示可用的硬币种类数， j 表示 需要找回的零钱
 * c[i-1,j] 表示 不使用第 i 枚硬币找零时，对金额为 j 进行找钱所需要的最少硬币数
 * c[i, j-coinsValues[i]] + 1 表示 使用 第 i 枚硬币找零时，对金额为 j 进行找钱所需要的最少硬币数。由于用了第 i 枚硬币，故使用的硬币数量要增1
 c[i,j] 取二者的较小值的那一个。
-
+```
+public static int charge(int[] coinsValues, int n){
+ 8         int[][] c = new int[coinsValues.length + 1][n + 1];
+ 9         
+10         //特殊情况1
+11         for(int i = 0; i <= coinsValues.length; i++)
+12             c[i][0] = 0;
+13         for(int i = 0; i <= n; i++)
+14             c[0][i] = Integer.MAX_VALUE;
+15         
+16         for(int j_money = 1; j_money <=n; j_money++)
+17         {
+18             
+19             for(int i_coinKinds = 1; i_coinKinds <= coinsValues.length; i_coinKinds++)
+20             {
+21                 if(j_money < coinsValues[i_coinKinds-1])//特殊情况2，coinsValues数组下标是从0开始的,  c[][]数组下标是从1开始计算的
+22                 {
+23                     c[i_coinKinds][j_money] = c[i_coinKinds - 1][j_money];//只能使用 第 1...(i-1)枚中的硬币
+24                     continue;
+25                 }
+26                 
+27                 //每个问题的选择数目---选其中较小的
+28                 if(c[i_coinKinds - 1][j_money] < (c[i_coinKinds][j_money - coinsValues[i_coinKinds-1]] +1))
+29                     c[i_coinKinds][j_money] = c[i_coinKinds - 1][j_money];
+30                 else
+31                     c[i_coinKinds][j_money] = c[i_coinKinds][j_money - coinsValues[i_coinKinds-1]] +1;
+32             }
+33         }
+34         return c[coinsValues.length][n];
+35     }
+```
 2、组合出所有情况 -> 回溯法实现组合问题
 
 
